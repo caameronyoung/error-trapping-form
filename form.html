@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="notHeader">
+    
+    <div class="contentContainer">
+        <div class="contentItem">
+            <h2>About Our Qualification in Website Design</h2>
+            <p>This course will teach you a variety of programming languages commonly used in industry to create websites. For example, there will be courses on: HTML, CSS, Javascript, Python, PHP, & SQL.</p>
+            <p>Similarly, there will be courses exploring and tutoring you on common stylistic choices for graphical design of pages. This will allow you to have a strong understanding of popular and trending design methodologies to create sites that will be popular and easily accessible</p>
+            <p>Alongside this, you will also learn about effective communication with clients and co-workers to explain and discuss ideas and visiosn you may have in mind.</p>
+            <p>To top it all off, it will also leave you with a varying portfolio showcasing the skills you've gained in various programming languages, along with websites you've created.</p>
+            
+        </div>
+    </div>
+
+    <div class="contentContainer">
+        <div class="contentItem">
+            <h2>if you are interested in applying for this qualification feel free to contact us with the below form</h2>
+            <p>If this qualification sounds like something you would be intersted in, then feel free to apply by filling out the below form. Simply enter your responses on the interactive form and press submit to send your details to our admissions staff</p>
+
+
+        </div>
+    </div>
+
+    <div class="contentContainer"> <!-- there's so many of these in a row to nest and space the document properly-->
+        <div class="contentItem">
+            <div class="contentContainer">
+                <div class="contentItem">
+                    <div class="notHeader">
+                        <div class="contentContainer">
+                            <h2>Expression of Interest Submission Form</h2>
+                        </div>
+                        <div class="contentContainer">
+                            <div class="contentContainer">
+                                <form id="form">
+                                    <div class="field"> <!---following an example from class for formatting and spacing-->
+                                        <label for="name">Please enter your Name:</label>
+                                        <input type="text" id="name">
+                                        <span class="caption"></span> <!---leaves space for a caption even if its not strictly needed here-->
+                                    </div>
+            
+                                    <div class="field">
+                                        <label for="age">Please enter your age:</label>
+                                        <input type="text" id="age">
+                                        <span class="caption">You must be at least 18 years old</span>
+                                    </div>
+                                
+                                    <div class="field">
+                                        <label for="email">Please enter your email address:</label>
+                                        <input type="email" id="email">
+                                        <span class="caption">This must be a valid email address</span>
+                                    </div>
+                                
+                                    <div class="field">
+                                        <label for="ph">Please enter your phone number:</label>
+                                        <input type="text" id="ph">
+                                        <span class="caption">This must be a valid 10 or 12 digit number with area code (eg: +61123111111)</span> 
+                                    </div>
+                                
+                                    <div class="field">
+                                        <label for="why">Why do you wish to study with us?</label>
+                                        <textarea type="text" name="why" id="why"></textarea>
+                                        <span class="caption">Please do not leave this blank.</span>
+                                    </div>
+                                    <button type="button" name="button" id="button" onclick="submitForm()">Submit</button>
+                                    <span id="endCaption"></span>
+                                </form>
+                            </div> 
+                        </div>                                         
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

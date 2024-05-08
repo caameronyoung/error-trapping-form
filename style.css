@@ -1,0 +1,174 @@
+/*=====general page formatting=====*/
+
+.notHeader /*the header menu bar has different formatting so i wrap the rest of the body in this to keep formatting consistent for everything else*/
+{
+      width: 80%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 35px;
+      padding-left: 35px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 6%;
+      margin-right: 6%;
+      border-style: solid;
+      border-width: 20px;
+      border-color: aliceblue;
+
+}
+h1, h2
+{
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: 100;
+      padding-top: 5px;
+      padding-bottom: 5px; 
+      padding-right: 0px;
+      padding-left: 0px;
+      border-top-style: dotted;
+      border-top-color: gray;
+      border-top-width: 1px;
+      border-bottom-style: dotted;
+      border-bottom-color: gray;
+      border-bottom-width: 1px;
+}
+
+/*=======GENERAL PAGE CONTENT FORMATTING======*/
+
+.contentContainer /*everything is wrapped in this, and contentItem to space things evenly in a grid that can be infinitely nested (mainly seen on form page*/
+{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.contentItem
+{
+    display: table-cell;
+    text-align: center;
+    font-size: 0.9em;
+
+}
+
+.contentImage
+{
+    display: table-cell;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/*======NAVIGATION MENU CSS=======*/
+
+a:visited
+{
+    text-decoration: none;
+}
+
+.header
+{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+
+.headerFooter :hover
+{
+    background-color: wheat;
+}
+.hoverbar /*this is an anchor tag */ 
+{
+    display: table-cell;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 0.9em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#hoverContact
+{
+    display: table-cell;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 0.9em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.current /*this change the colour of the header bar when on the current page*/
+{
+    display: table-cell;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+
+
+
+/*====Form formatting (from example in class)*/
+form 
+{
+    background-color: aliceblue;
+    padding: 2em 4em;
+    display:grid;
+    place-items: center;
+}
+
+.field 
+{
+    display: flex;
+    flex-direction: column; /* places items in a column spaced accordingly intead of left to right*/
+    margin: 1em 0;
+    gap: 0.4em;
+    
+}
+
+input 
+{
+    padding: 0.7em;
+    border-radius: 0.2em;
+    border: 1px solid grey;
+}
+
+.caption 
+{
+    font-size: 0.8em;
+    color: #8c7971;
+    font-weight: bold;
+}
+
+.error 
+{
+    color: rgb(255, 93, 44)
+}
+
+.success 
+{
+    visibility: hidden;
+}
+
+.complete 
+{
+    outline: 2px solid greenyellow;
+    position: relative;
+    overflow: visible;
+
+}
+
+.invalid 
+{
+    outline: 2px solid #f96e4f;
+}
+
+#endCaption
+{
+    font-size: 1em;
+    color: #8c7971;
+    font-weight: bold;
+}
